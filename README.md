@@ -46,11 +46,6 @@
 <div align="center">
 
 <img src="https://streak-stats.demolab.com?user=syoya3214&theme=tokyonight&hide_border=true&locale=ja" height="170" />
-<img src="https://github-readme-stats.vercel.app/api?username=syoya3214&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&locale=ja" height="170" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=syoya3214&theme=tokyo-night&hide_border=true&area=true" width="100%" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=syoya3214&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1" />
 
 </div>
 
