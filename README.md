@@ -29,7 +29,7 @@
 
 **Languages & Frameworks**
 
-<img src="https://skillicons.dev/icons?i=python,ts,js,react,nodejs,electron&theme=dark" />
+<img src="https://skillicons.dev/icons?i=python,ts,react,nodejs,electron&theme=dark" />
 
 **ML / AI**
 
