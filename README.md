@@ -49,14 +49,11 @@
 
 </div>
 
-## 🐍 Contribution Snake
+## 🌃 3D Contributions
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/syoya3214/syoya3214/output/github-contribution-grid-snake-dark.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/syoya3214/syoya3214/output/github-contribution-grid-snake.svg" />
-</picture>
+<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" width="100%" />
 
 </div>
 
