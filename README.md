@@ -45,7 +45,7 @@
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=syoya3214&theme=tokyonight&hide_border=true&locale=ja" height="170" />
+<img src="assets/contrib-card.svg" alt="Contributions in the last year" width="100%" />
 
 </div>
 
