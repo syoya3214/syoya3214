@@ -59,8 +59,11 @@ def monthly(days):
     months = OrderedDict()
     for date, c in days:
         months[date[:7]] = months.get(date[:7], 0) + c
-    items = list(months.items())
-    return items[-12:]
+    items = list(months.items())[-12:]
+    # 活動のない先頭の月は表示しない
+    while len(items) > 1 and items[0][1] == 0:
+        items.pop(0)
+    return items
 
 
 def esc(s):
@@ -73,14 +76,14 @@ def render(total, days):
     best_date, best = max(days, key=lambda x: x[1])
     months = monthly(days)
     peak = max([c for _, c in months] + [1])
-    start, end = days[0][0], days[-1][0]
+    start, end = months[0][0] + "-01", days[-1][0]
 
     W, H = 900, 305
     # bar chart area
     cx, cy, cw, ch = 330, 70, 540, 190
     n = len(months)
     slot = cw / n
-    bw = slot * 0.62
+    bw = min(slot * 0.62, 44)
 
     bars = []
     for i, (ym, c) in enumerate(months):
@@ -128,7 +131,7 @@ def render(total, days):
   @keyframes fade {{ to {{ opacity: 1; }} }}
 </style>
 <rect width="{W}" height="{H}" rx="14" fill="url(#bg)"/>
-<text class="title" x="40" y="42">CONTRIBUTIONS · 過去1年</text>
+<text class="title" x="40" y="42">CONTRIBUTIONS</text>
 <text class="range" x="{W - 30}" y="42">{start} 〜 {end}</text>
 <text class="big" x="36" y="122">{total}</text>
 <text class="bigl" x="40" y="146">コントリビューション</text>
